@@ -1,0 +1,18 @@
+--- Packages/Libraries/mautic/api-library/lib/Api/Api.php	2023-05-01 17:54:02
++++ Packages/Libraries/mautic/api-library/lib/Api/Api.php	2022-10-20 11:12:56
+@@ -121,14 +121,10 @@
+
+     /**
+      * Sets a logger.
+-     *
+-     * @return $this
+      */
+-    public function setLogger(LoggerInterface $logger)
++    public function setLogger(LoggerInterface $logger): void
+     {
+         $this->logger = $logger;
+-
+-        return $this;
+     }
+
+     /**

@@ -1,0 +1,7 @@
+{
+    "patches": {
+        "mautic/api-library": {
+            "Fix Mautic API": "https://raw.githubusercontent.com/LitespeedProject/Patches/main/Mautic-Api.patch"
+        }
+    }
+}
