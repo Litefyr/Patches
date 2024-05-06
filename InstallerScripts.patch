@@ -1,0 +1,49 @@
+From ce18539bbe65aa9defdfe206e94f6f40aa144aec Mon Sep 17 00:00:00 2001
+From: Jon Uhlmann <account@uhlmann.pro>
+Date: Fri, 3 May 2024 18:58:30 +0200
+Subject: [PATCH] BUGFIX: Pass composer event to update and install scripts
+
+BUGFIX: Pass composer event to update and install scripts
+---
+ Neos.Flow/Classes/Composer/InstallerScripts.php | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
+diff --git a/Neos.Flow/Classes/Composer/InstallerScripts.php b/Neos.Flow/Classes/Composer/InstallerScripts.php
+index 4c12e4a410..b39e588429 100644
+--- a/Neos.Flow/Classes/Composer/InstallerScripts.php
++++ b/Neos.Flow/Classes/Composer/InstallerScripts.php
+@@ -89,11 +89,11 @@ public static function postPackageUpdateAndInstall(PackageEvent $event): void
+         }
+
+         if ($operation instanceof InstallOperation && isset($packageExtraConfig['neos/flow']['post-install'])) {
+-            self::runPackageScripts($packageExtraConfig['neos/flow']['post-install']);
++            self::runPackageScripts($packageExtraConfig['neos/flow']['post-install'], $event);
+         }
+
+         if ($operation instanceof UpdateOperation && isset($packageExtraConfig['neos/flow']['post-update'])) {
+-            self::runPackageScripts($packageExtraConfig['neos/flow']['post-update']);
++            self::runPackageScripts($packageExtraConfig['neos/flow']['post-update'], $event);
+         }
+     }
+
+@@ -121,10 +121,11 @@ protected static function copyDistributionFiles(string $installerResourcesDirect
+      * Calls a static method from it's string representation
+      *
+      * @param string $staticMethodReference
++     * @param PackageEvent $event
+      * @return void
+      * @throws Exception\InvalidConfigurationException
+      */
+-    protected static function runPackageScripts(string $staticMethodReference): void
++    protected static function runPackageScripts(string $staticMethodReference, PackageEvent $event): void
+     {
+         $className = substr($staticMethodReference, 0, strpos($staticMethodReference, '::'));
+         $methodName = substr($staticMethodReference, strpos($staticMethodReference, '::') + 2);
+@@ -135,6 +136,6 @@ protected static function runPackageScripts(string $staticMethodReference): void
+         if (!is_callable($staticMethodReference)) {
+             throw new Exception\InvalidConfigurationException('Method "' . $staticMethodReference . '" is not callable', 1348751082);
+         }
+-        $className::$methodName();
++        $className::$methodName($event);
+     }
+ }
