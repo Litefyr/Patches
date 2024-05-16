@@ -1,10 +1,7 @@
 {
     "patches": {
         "mautic/api-library": {
-            "Fix Mautic API": "https://raw.githubusercontent.com/BlazingRepos/Patches/main/Mautic-Api.patch"
-        },
-        "neos/flow": {
-            "Pass composer event to update and install scripts": "https://raw.githubusercontent.com/BlazingRepos/Patches/main/InstallerScripts.patch"
+            "Fix Mautic API": "https://raw.githubusercontent.com/Litefyr/Patches/main/Mautic-Api.patch"
         }
     }
 }

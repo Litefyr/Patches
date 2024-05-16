@@ -1,4 +1,4 @@
-# Patches for [Blazing]
+# Patches for [Litefyr]
 
 Sometimes there are [composer] [packages] who need a patch in order to work correctly with [Neos]. In order to have a
 central place to manage them, we've created this repository. You can either download the patches and include it into
@@ -8,7 +8,7 @@ your Distribution or you can also include it directly. In order to do this, make
 ```json
 {
     "extra": {
-        "patches-file": "https://raw.githubusercontent.com/BlazingRepos/Patches/main/patches.json"
+        "patches-file": "https://raw.githubusercontent.com/Litefyr/Patches/main/patches.json"
     }
 }
 ```
@@ -26,7 +26,7 @@ correctly
 }
 ```
 
-[blazing]: https://blazing.at
+[Litefyr]: https://litefyr.io
 [neos]: https://neos.io
 [composer]: https://getcomposer.org
 [packages]: https://packagist.org
