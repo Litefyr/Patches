@@ -1,0 +1,59 @@
+From 031b641515380646ffa7f1e68c7c3c083c49e604 Mon Sep 17 00:00:00 2001
+From: Jon Uhlmann <account@uhlmann.pro>
+Date: Sun, 16 Jun 2024 13:25:17 +0200
+Subject: [PATCH] Update IndexingHelper.php
+
+---
+ Classes/Eel/IndexingHelper.php | 20 +++++++++++++++++++-
+ 1 file changed, 19 insertions(+), 1 deletion(-)
+
+diff --git a/Classes/Eel/IndexingHelper.php b/Classes/Eel/IndexingHelper.php
+index b870295..d7aae52 100644
+--- a/Classes/Eel/IndexingHelper.php
++++ b/Classes/Eel/IndexingHelper.php
+@@ -27,6 +27,13 @@
+  */
+ class IndexingHelper implements ProtectedContextAwareInterface
+ {
++    /**
++     * @Flow\InjectConfiguration(package="Litefyr.Meilisearch", path="fulltextPlain")
++     * @var string
++     */
++    protected $fulltextPlain;
++
++
+     /**
+      * @Flow\Inject
+      * @var AssetExtractorInterface
+@@ -163,12 +170,20 @@ public function extractHtmlTags($string): array
+
+         // prevents concatenated words when stripping tags afterwards
+         $string = str_replace(['<', '>'], [' <', '> '], $string);
++
++        if ($this->fulltextPlain) {
++            $string = strip_tags($string);
++            $string = preg_replace('/\s+/u', ' ', $string);
++            return ['text' => $string];
++        }
++
+         // strip all tags except h1-6
+         $string = strip_tags($string, '<h1><h2><h3><h4><h5><h6>');
+
+         $parts = [
+-            'text' => ''
++            'text' => '',
+         ];
++
+         while ($string !== '') {
+             $matches = [];
+             if (preg_match('/<(h1|h2|h3|h4|h5|h6)[^>]*>.*?<\/\1>/ui', $string, $matches, PREG_OFFSET_CAPTURE)) {
+@@ -207,6 +222,9 @@ public function extractHtmlTags($string): array
+      */
+     public function extractInto(string $bucketName, $string): array
+     {
++        if ($this->fulltextPlain) {
++            $bucketName = 'text';
++        }
+         return [
+             $bucketName => (string)$string
+         ];

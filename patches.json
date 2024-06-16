@@ -2,6 +2,9 @@
     "patches": {
         "mautic/api-library": {
             "Fix Mautic API": "https://raw.githubusercontent.com/Litefyr/Patches/main/Mautic-Api.patch"
+        },
+        "neos/content-repository-search": {
+            "Enable flat mode fulltext": "https://raw.githubusercontent.com/Litefyr/Patches/main/Search-FulltextPlain.patch"
         }
     }
 }
