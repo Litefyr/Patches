@@ -1,0 +1,807 @@
+From 24fe7ca93398716393f9b0de39d7cc5952d3ab76 Mon Sep 17 00:00:00 2001
+From: Jon Uhlmann <account@uhlmann.pro>
+Date: Mon, 1 Jul 2024 17:59:06 +0200
+Subject: [PATCH 1/2] BUGFIX: DateTime validation (en)
+
+---
+ .../Resources/Private/Translations/en/ValidationErrors.xlf  | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/Neos.Flow/Resources/Private/Translations/en/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/en/ValidationErrors.xlf
+index da98c6c6c1..22ac2b4867 100644
+--- a/Neos.Flow/Resources/Private/Translations/en/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/en/ValidationErrors.xlf
+@@ -30,13 +30,13 @@
+ 				<source>The given value is not a valid date</source>
+ 			</trans-unit>
+ 			<trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
+ 			</trans-unit>
+ 			<trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
++				<source>The given date must be after {0,datetime,dateTime}</source>
+ 			</trans-unit>
+ 			<trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
++				<source>The given date must be before {0,datetime,dateTime}</source>
+ 			</trans-unit>
+
+ 			<!-- DateTimeValidator -->
+
+From 01392149f10628d6efbfb53b5d2185bbc28daff3 Mon Sep 17 00:00:00 2001
+From: Jon Uhlmann <account@uhlmann.pro>
+Date: Mon, 1 Jul 2024 17:59:32 +0200
+Subject: [PATCH 2/2] BUGFIX: DateTime validation (other languages)
+
+---
+ .../Private/Translations/ar/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/cs/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/da/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/de/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/el/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/es/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/fi/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/fr/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/hu/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/id_ID/ValidationErrors.xlf  | 12 ++++++------
+ .../Private/Translations/it/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/ja/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/km/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/lv/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/nl/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/no/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/pl/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/pt/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/pt_BR/ValidationErrors.xlf  | 12 ++++++------
+ .../Private/Translations/ru/ValidationErrors.xlf     | 10 +++++-----
+ .../Private/Translations/sr/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/sv/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/tl_PH/ValidationErrors.xlf  | 12 ++++++------
+ .../Private/Translations/tr/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/uk/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/vi/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/zh/ValidationErrors.xlf     | 12 ++++++------
+ .../Private/Translations/zh_TW/ValidationErrors.xlf  | 12 ++++++------
+ 28 files changed, 167 insertions(+), 167 deletions(-)
+
+diff --git a/Neos.Flow/Resources/Private/Translations/ar/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/ar/ValidationErrors.xlf
+index 69a3425b29..b67267a38f 100644
+--- a/Neos.Flow/Resources/Private/Translations/ar/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/ar/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="translated">القيمة المعطاة ليست تاريخاً صحيحاً</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">يجب أن يكون التاريخ المعطى بين {0,datetime,datetime} و {1,datetime,datetime}</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">يجب أن يكون التاريخ المعطى بين {0,datetime,dateTime} و {1,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">يجب أن يكون التاريخ المعطى بعد {0,datetime,datetime}</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">يجب أن يكون التاريخ المعطى بعد {0,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">يجب أن يكون التاريخ المعطى قبل {0,datetime,datetime}</target>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">يجب أن يكون التاريخ المعطى قبل {0,datetime,dateTime}</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve">
+diff --git a/Neos.Flow/Resources/Private/Translations/cs/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/cs/ValidationErrors.xlf
+index 5780191d40..942bee88cc 100644
+--- a/Neos.Flow/Resources/Private/Translations/cs/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/cs/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="translated">Zadaná hodnota není platné datum</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be after {0,datetime,datetime}</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be after {0,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be before {0,datetime,datetime}</target>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be before {0,datetime,dateTime}</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve">
+diff --git a/Neos.Flow/Resources/Private/Translations/da/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/da/ValidationErrors.xlf
+index 83723216c3..491da93c63 100644
+--- a/Neos.Flow/Resources/Private/Translations/da/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/da/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="final">Den angivne værdi er ikke en gyldig dato</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be after {0,datetime,datetime}</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be after {0,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be before {0,datetime,datetime}</target>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be before {0,datetime,dateTime}</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve" approved="yes">
+diff --git a/Neos.Flow/Resources/Private/Translations/de/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/de/ValidationErrors.xlf
+index d22df2f48a..1a5a9e7876 100644
+--- a/Neos.Flow/Resources/Private/Translations/de/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/de/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="final">Der Wert ist kein gültiges Datum</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">Das angegebene Datum muss zwischen {0,datetime,datetime} und {1,datetime,datetime} liegen</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">Das angegebene Datum muss zwischen {0,datetime,dateTime} und {1,datetime,dateTime} liegen</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">Das angegebene Datum muss nach {0,datetime,datetime} sein</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">Das angegebene Datum muss nach {0,datetime,dateTime} sein</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">Das angegebene Datum muss vor {0,datetime,datetime} sein</target>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">Das angegebene Datum muss vor {0,datetime,dateTime} sein</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve" approved="yes">
+diff --git a/Neos.Flow/Resources/Private/Translations/el/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/el/ValidationErrors.xlf
+index 85bfa1636f..c371636460 100644
+--- a/Neos.Flow/Resources/Private/Translations/el/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/el/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="translated">The given value is not a valid date</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be after {0,datetime,datetime}</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be after {0,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be before {0,datetime,datetime}</target>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be before {0,datetime,dateTime}</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve">
+diff --git a/Neos.Flow/Resources/Private/Translations/es/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/es/ValidationErrors.xlf
+index 0e2ee4249f..26654200ee 100644
+--- a/Neos.Flow/Resources/Private/Translations/es/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/es/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="translated">El valor dado no es una fecha válida</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">La fecha dada debe estar entre {0,datetime,datetime} y {1,datetime,datetime}</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">La fecha dada debe estar entre {0,datetime,dateTime} y {1,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">La fecha dada debe estar después {0,datetime,datetime}</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">La fecha dada debe estar después {0,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">La fecha indicada debe ser anterior a {0,datetime,datetime}</target>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">La fecha indicada debe ser anterior a {0,datetime,dateTime}</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve">
+diff --git a/Neos.Flow/Resources/Private/Translations/fi/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/fi/ValidationErrors.xlf
+index dc0eb57196..6f75e5d445 100644
+--- a/Neos.Flow/Resources/Private/Translations/fi/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/fi/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="final">Annettu arvo ei ole kelvollinen päivämäärä</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be after {0,datetime,datetime}</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be after {0,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be before {0,datetime,datetime}</target>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be before {0,datetime,dateTime}</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve" approved="yes">
+diff --git a/Neos.Flow/Resources/Private/Translations/fr/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/fr/ValidationErrors.xlf
+index 609bcd5b5a..10f9a54a7b 100644
+--- a/Neos.Flow/Resources/Private/Translations/fr/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/fr/ValidationErrors.xlf
+@@ -26,14 +26,14 @@
+ 				<source>The given value is not a valid date</source>
+ 			<target state="final">Ce n'est pas une date valide</target></trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-			<target state="translated">La date indiquée doit se trouver entre {0,datetime,datetime} et {1,datetime,datetime}</target></trans-unit>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++			<target state="translated">La date indiquée doit se trouver entre {0,datetime,dateTime} et {1,datetime,dateTime}</target></trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-			<target state="translated">La date indiquée doit se trouver après {0,datetime,datetime}</target></trans-unit>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++			<target state="translated">La date indiquée doit se trouver après {0,datetime,dateTime}</target></trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-			<target state="translated">La date indiquée doit se trouver avant {0,datetime,datetime}</target></trans-unit>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++			<target state="translated">La date indiquée doit se trouver avant {0,datetime,dateTime}</target></trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve" approved="yes">
+ 				<source>The "locale" option can be only set to string identifier, or Locale object</source>
+diff --git a/Neos.Flow/Resources/Private/Translations/hu/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/hu/ValidationErrors.xlf
+index 814dcf350a..ffb6ee15dd 100644
+--- a/Neos.Flow/Resources/Private/Translations/hu/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/hu/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="translated">A megadott érték nem érvényes dátum</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be after {0,datetime,datetime}</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be after {0,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be before {0,datetime,datetime}</target>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be before {0,datetime,dateTime}</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve">
+diff --git a/Neos.Flow/Resources/Private/Translations/id_ID/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/id_ID/ValidationErrors.xlf
+index ff06da21e3..6486176ac9 100644
+--- a/Neos.Flow/Resources/Private/Translations/id_ID/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/id_ID/ValidationErrors.xlf
+@@ -26,14 +26,14 @@
+ 				<source>The given value is not a valid date</source>
+ 			<target state="translated">Nilai yang diberikan bukanlah tanggal yang valid</target></trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-			<target state="translated">Tanggal yang diberikan harus di antara {0,datetime,datetime} dan {1,datetime,datetime}</target></trans-unit>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++			<target state="translated">Tanggal yang diberikan harus di antara {0,datetime,dateTime} dan {1,datetime,dateTime}</target></trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-			<target state="translated">Tanggal yang diberikan harus setelah {0,datetime,datetime}</target></trans-unit>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++			<target state="translated">Tanggal yang diberikan harus setelah {0,datetime,dateTime}</target></trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-			<target state="translated">Tanggal yang diberikan harus sebelum {0,datetime,datetime}</target></trans-unit>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++			<target state="translated">Tanggal yang diberikan harus sebelum {0,datetime,dateTime}</target></trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve">
+ 				<source>The "locale" option can be only set to string identifier, or Locale object</source>
+diff --git a/Neos.Flow/Resources/Private/Translations/it/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/it/ValidationErrors.xlf
+index efb77b67c8..e707c5e1ac 100644
+--- a/Neos.Flow/Resources/Private/Translations/it/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/it/ValidationErrors.xlf
+@@ -26,14 +26,14 @@
+ 				<source>The given value is not a valid date</source>
+ 			<target state="translated">Il valore specificato non è una data valida</target></trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-			<target state="translated">La data data deve essere tra {0,datetime,datetime} e {1,datetime,datetime}</target></trans-unit>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++			<target state="translated">La data data deve essere tra {0,datetime,dateTime} e {1,datetime,dateTime}</target></trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-			<target state="translated">La data data deve essere successiva a {0,datetime,datetime}</target></trans-unit>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++			<target state="translated">La data data deve essere successiva a {0,datetime,dateTime}</target></trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-			<target state="translated">La data data deve essere prima di {0,datetime,datetime}</target></trans-unit>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++			<target state="translated">La data data deve essere prima di {0,datetime,dateTime}</target></trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve">
+ 				<source>The "locale" option can be only set to string identifier, or Locale object</source>
+diff --git a/Neos.Flow/Resources/Private/Translations/ja/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/ja/ValidationErrors.xlf
+index b812dafd42..e9827537ab 100644
+--- a/Neos.Flow/Resources/Private/Translations/ja/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/ja/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="translated">指定された値は有効な日付ではありません</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be after {0,datetime,datetime}</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be after {0,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be before {0,datetime,datetime}</target>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be before {0,datetime,dateTime}</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve">
+diff --git a/Neos.Flow/Resources/Private/Translations/km/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/km/ValidationErrors.xlf
+index e2c467e02e..4ae3f54341 100644
+--- a/Neos.Flow/Resources/Private/Translations/km/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/km/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="final">តម្លៃដែលផ្ដល់អោយ គឺមិនត្រឹមត្រូវតាមកាលបរិឆ្ឆេទនោះទេ</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be after {0,datetime,datetime}</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be after {0,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be before {0,datetime,datetime}</target>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be before {0,datetime,dateTime}</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve" approved="yes">
+diff --git a/Neos.Flow/Resources/Private/Translations/lv/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/lv/ValidationErrors.xlf
+index b3707bd481..72692fc937 100644
+--- a/Neos.Flow/Resources/Private/Translations/lv/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/lv/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="final">Noteiktā vērtība nav derīgs datums</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">Norādītajam datumam jābūt no {0,datetime,datetime} līdz {1,datetime,datetime}</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">Norādītajam datumam jābūt no {0,datetime,dateTime} līdz {1,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">Datumam ir jābūt pēc {0,datetime,datetime}</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">Datumam ir jābūt pēc {0,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">Norādītajam datumam jābūt pirms {0,datetime,datetime}</target>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">Norādītajam datumam jābūt pirms {0,datetime,dateTime}</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve" approved="yes">
+diff --git a/Neos.Flow/Resources/Private/Translations/nl/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/nl/ValidationErrors.xlf
+index 691654978a..2cfe0423b3 100644
+--- a/Neos.Flow/Resources/Private/Translations/nl/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/nl/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="final">De opgegeven waarde is geen geldige datum</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">De gegeven datum moet tussen {0,datetime,datetime} en {1,datatime,datetime} liggen</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">De gegeven datum moet tussen {0,datetime,dateTime} en {1,datatime,datetime} liggen</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">De gegeven datum moet na {0,datetime,datetime} liggen</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">De gegeven datum moet na {0,datetime,dateTime} liggen</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">De gegeven datum moet voor {0,datetime,datetime} liggen</target>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">De gegeven datum moet voor {0,datetime,dateTime} liggen</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve" approved="yes">
+diff --git a/Neos.Flow/Resources/Private/Translations/no/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/no/ValidationErrors.xlf
+index 97232cf6cd..48af243ae1 100644
+--- a/Neos.Flow/Resources/Private/Translations/no/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/no/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="translated">Den angitte verdien er ikke en gyldig dato</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be after {0,datetime,datetime}</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be after {0,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be before {0,datetime,datetime}</target>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be before {0,datetime,dateTime}</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve">
+diff --git a/Neos.Flow/Resources/Private/Translations/pl/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/pl/ValidationErrors.xlf
+index a7959aaa17..6f50d88e25 100644
+--- a/Neos.Flow/Resources/Private/Translations/pl/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/pl/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="final">Podana wartość nie jest poprawną datą</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">Podana data musi być pomiędzy {0,datetime,datetime} a {1,datetime,datetime}</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">Podana data musi być pomiędzy {0,datetime,dateTime} a {1,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">Podana data musi być po {0,datetime,datetime}</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">Podana data musi być po {0,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">Podana data musi być przed {0,datetime,datetime}</target>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">Podana data musi być przed {0,datetime,dateTime}</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve" approved="yes">
+diff --git a/Neos.Flow/Resources/Private/Translations/pt/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/pt/ValidationErrors.xlf
+index dcaea4c7de..b82e133aee 100644
+--- a/Neos.Flow/Resources/Private/Translations/pt/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/pt/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="translated">The given value is not a valid date</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-        <source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</target>
++        <source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-        <source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be after {0,datetime,datetime}</target>
++        <source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be after {0,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-        <source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be before {0,datetime,datetime}</target>
++        <source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be before {0,datetime,dateTime}</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve">
+diff --git a/Neos.Flow/Resources/Private/Translations/pt_BR/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/pt_BR/ValidationErrors.xlf
+index da6b3a96a7..b7845b9ac5 100644
+--- a/Neos.Flow/Resources/Private/Translations/pt_BR/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/pt_BR/ValidationErrors.xlf
+@@ -26,14 +26,14 @@
+ 				<source>The given value is not a valid date</source>
+ 			<target state="translated">o valor fornecido não é uma data válida</target></trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-			<target state="translated">A data dada deve estar entre {0,datetime,datetime} e {1,datetime,datetime}</target></trans-unit>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++			<target state="translated">A data dada deve estar entre {0,datetime,dateTime} e {1,datetime,dateTime}</target></trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-			<target state="translated">A data dada deve ser depois de {0,datetime,datetime}</target></trans-unit>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++			<target state="translated">A data dada deve ser depois de {0,datetime,dateTime}</target></trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-			<target state="translated">A data dada deve ser antes de {0,datetime,datetime}</target></trans-unit>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++			<target state="translated">A data dada deve ser antes de {0,datetime,dateTime}</target></trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve">
+ 				<source>The "locale" option can be only set to string identifier, or Locale object</source>
+diff --git a/Neos.Flow/Resources/Private/Translations/ru/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/ru/ValidationErrors.xlf
+index fe5456c5bb..b449a2c578 100644
+--- a/Neos.Flow/Resources/Private/Translations/ru/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/ru/ValidationErrors.xlf
+@@ -32,15 +32,15 @@
+         <target state="final">Заданное значение не является годной датой</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">Данная дата должна быть между  {0,datetime,datetime} и {1,datetime,datetime}</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">Данная дата должна быть между  {0,datetime,dateTime} и {1,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">Дата должна быть позже чем {0,datetime,datetime}</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">Дата должна быть позже чем {0,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
++				<source>The given date must be before {0,datetime,dateTime}</source>
+         <target state="translated">Дата должна быть раньше чем {formatLatestDate}</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+diff --git a/Neos.Flow/Resources/Private/Translations/sr/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/sr/ValidationErrors.xlf
+index 7758b91da8..040aaa1877 100644
+--- a/Neos.Flow/Resources/Private/Translations/sr/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/sr/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="translated">The given value is not a valid date</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be after {0,datetime,datetime}</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be after {0,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be before {0,datetime,datetime}</target>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be before {0,datetime,dateTime}</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve">
+diff --git a/Neos.Flow/Resources/Private/Translations/sv/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/sv/ValidationErrors.xlf
+index 26a41fcf0e..d349244271 100644
+--- a/Neos.Flow/Resources/Private/Translations/sv/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/sv/ValidationErrors.xlf
+@@ -26,14 +26,14 @@
+ 				<source>The given value is not a valid date</source>
+ 			<target state="translated">Det angivna värdet är inte ett giltigt datum</target></trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-			<target state="translated">Det angivna datumet måste vara mellan {0,datetime,datetime}</target></trans-unit>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++			<target state="translated">Det angivna datumet måste vara mellan {0,datetime,dateTime}</target></trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-			<target state="translated">Det angivna datumet måste vara efter {0,datetime,datetime}</target></trans-unit>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++			<target state="translated">Det angivna datumet måste vara efter {0,datetime,dateTime}</target></trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-			<target state="translated">Det angivna datumet måste vara före {0,datetime,datetime}</target></trans-unit>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++			<target state="translated">Det angivna datumet måste vara före {0,datetime,dateTime}</target></trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve">
+ 				<source>The "locale" option can be only set to string identifier, or Locale object</source>
+diff --git a/Neos.Flow/Resources/Private/Translations/tl_PH/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/tl_PH/ValidationErrors.xlf
+index 61fb2cb01c..de52612d12 100644
+--- a/Neos.Flow/Resources/Private/Translations/tl_PH/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/tl_PH/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="translated">The given value is not a valid date</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be after {0,datetime,datetime}</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be after {0,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be before {0,datetime,datetime}</target>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be before {0,datetime,dateTime}</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve">
+diff --git a/Neos.Flow/Resources/Private/Translations/tr/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/tr/ValidationErrors.xlf
+index a718d3c53b..1560a7c9a4 100644
+--- a/Neos.Flow/Resources/Private/Translations/tr/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/tr/ValidationErrors.xlf
+@@ -26,14 +26,14 @@
+ 				<source>The given value is not a valid date</source>
+ 			<target state="translated">Verilen değer geçerli bir tarih içermiyor</target></trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-			<target state="translated">Verilen tarih{0,datetime,datetime} ve {1,datetime,datetime} arasında olmak zorunda</target></trans-unit>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++			<target state="translated">Verilen tarih{0,datetime,dateTime} ve {1,datetime,dateTime} arasında olmak zorunda</target></trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-			<target state="translated">Verilen tarih {0,datetime,datetime}'den sonra olmalı</target></trans-unit>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++			<target state="translated">Verilen tarih {0,datetime,dateTime}'den sonra olmalı</target></trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-			<target state="translated">Verilen tarih {0,datetime,datetime}'den önce olmalı</target></trans-unit>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++			<target state="translated">Verilen tarih {0,datetime,dateTime}'den önce olmalı</target></trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve">
+ 				<source>The "locale" option can be only set to string identifier, or Locale object</source>
+diff --git a/Neos.Flow/Resources/Private/Translations/uk/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/uk/ValidationErrors.xlf
+index a170838c2e..3a0c31ce6d 100644
+--- a/Neos.Flow/Resources/Private/Translations/uk/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/uk/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="translated">The given value is not a valid date</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">Задана дата мусить бути між {0,datetime,datetime} і {1,datetime,datetime}</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">Задана дата мусить бути між {0,datetime,dateTime} і {1,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">Задана дата мусить бути після {0,datetime,datetime}</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">Задана дата мусить бути після {0,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">Задана дата мусить бути до {0,datetime,datetime}</target>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">Задана дата мусить бути до {0,datetime,dateTime}</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve">
+diff --git a/Neos.Flow/Resources/Private/Translations/vi/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/vi/ValidationErrors.xlf
+index ca482dd058..582a61b2cd 100644
+--- a/Neos.Flow/Resources/Private/Translations/vi/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/vi/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="translated">The given value is not a valid date</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be after {0,datetime,datetime}</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be after {0,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be before {0,datetime,datetime}</target>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be before {0,datetime,dateTime}</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve">
+diff --git a/Neos.Flow/Resources/Private/Translations/zh/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/zh/ValidationErrors.xlf
+index 32a09a55ad..2b7b2be58f 100644
+--- a/Neos.Flow/Resources/Private/Translations/zh/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/zh/ValidationErrors.xlf
+@@ -26,14 +26,14 @@
+ 				<source>The given value is not a valid date</source>
+ 			<target state="translated">不是有效日期</target></trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-			<target state="translated">日期必须在 {0,datetime,datetime} 和 {1,datetime,datetime} 之间</target></trans-unit>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++			<target state="translated">日期必须在 {0,datetime,dateTime} 和 {1,datetime,dateTime} 之间</target></trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-			<target state="translated">日期必须在{0,datetime,datetime}之后</target></trans-unit>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++			<target state="translated">日期必须在{0,datetime,dateTime}之后</target></trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-			<target state="translated">日期必须在{0,datetime,datetime}之前</target></trans-unit>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++			<target state="translated">日期必须在{0,datetime,dateTime}之前</target></trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve">
+ 				<source>The "locale" option can be only set to string identifier, or Locale object</source>
+diff --git a/Neos.Flow/Resources/Private/Translations/zh_TW/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/zh_TW/ValidationErrors.xlf
+index ee1ec0b032..e91a19cb8a 100644
+--- a/Neos.Flow/Resources/Private/Translations/zh_TW/ValidationErrors.xlf
++++ b/Neos.Flow/Resources/Private/Translations/zh_TW/ValidationErrors.xlf
+@@ -32,16 +32,16 @@
+         <target state="translated">給予的值不是有效日期</target>
+       </trans-unit>
+       <trans-unit id="1325615630" xml:space="preserve">
+-				<source>The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</source>
+-        <target state="translated">The given date must be between {0,datetime,datetime} and {1,datetime,datetime}</target>
++				<source>The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</source>
++        <target state="translated">The given date must be between {0,datetime,dateTime} and {1,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315107" xml:space="preserve">
+-				<source>The given date must be after {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be after {0,datetime,datetime}</target>
++				<source>The given date must be after {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be after {0,datetime,dateTime}</target>
+       </trans-unit>
+       <trans-unit id="1324315115" xml:space="preserve">
+-				<source>The given date must be before {0,datetime,datetime}</source>
+-        <target state="translated">The given date must be before {0,datetime,datetime}</target>
++				<source>The given date must be before {0,datetime,dateTime}</source>
++        <target state="translated">The given date must be before {0,datetime,dateTime}</target>
+       </trans-unit>
+       <!-- DateTimeValidator -->
+       <trans-unit id="1281454676" xml:space="preserve">
