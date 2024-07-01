@@ -1,11 +1,39 @@
 From 24fe7ca93398716393f9b0de39d7cc5952d3ab76 Mon Sep 17 00:00:00 2001
 From: Jon Uhlmann <account@uhlmann.pro>
 Date: Mon, 1 Jul 2024 17:59:06 +0200
-Subject: [PATCH 1/2] BUGFIX: DateTime validation (en)
+Subject: BUGFIX: DateTime validation
 
 ---
- .../Resources/Private/Translations/en/ValidationErrors.xlf  | 6 +++---
- 1 file changed, 3 insertions(+), 3 deletions(-)
+ .../Resources/Private/Translations/en/ValidationErrors.xlf     | 6 +++---
+ .../Resources/Private/Translations/ar/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/cs/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/da/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/de/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/el/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/es/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/fi/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/fr/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/hu/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/id_ID/ValidationErrors.xlf  | 12 ++++++------
+ .../Resources/Private/Translations/it/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/ja/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/km/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/lv/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/nl/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/no/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/pl/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/pt/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/pt_BR/ValidationErrors.xlf  | 12 ++++++------
+ .../Resources/Private/Translations/ru/ValidationErrors.xlf     | 10 +++++-----
+ .../Resources/Private/Translations/sr/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/sv/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/tl_PH/ValidationErrors.xlf  | 12 ++++++------
+ .../Resources/Private/Translations/tr/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/uk/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/vi/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/zh/ValidationErrors.xlf     | 12 ++++++------
+ .../Resources/Private/Translations/zh_TW/ValidationErrors.xlf  | 12 ++++++------
+ 29 files changed, 170 insertions(+), 170 deletions(-)
 
 diff --git a/Neos.Flow/Resources/Private/Translations/en/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/en/ValidationErrors.xlf
 index da98c6c6c1..22ac2b4867 100644
@@ -28,43 +56,6 @@ index da98c6c6c1..22ac2b4867 100644
  			</trans-unit>
 
  			<!-- DateTimeValidator -->
-
-From 01392149f10628d6efbfb53b5d2185bbc28daff3 Mon Sep 17 00:00:00 2001
-From: Jon Uhlmann <account@uhlmann.pro>
-Date: Mon, 1 Jul 2024 17:59:32 +0200
-Subject: [PATCH 2/2] BUGFIX: DateTime validation (other languages)
-
----
- .../Private/Translations/ar/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/cs/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/da/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/de/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/el/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/es/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/fi/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/fr/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/hu/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/id_ID/ValidationErrors.xlf  | 12 ++++++------
- .../Private/Translations/it/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/ja/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/km/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/lv/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/nl/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/no/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/pl/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/pt/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/pt_BR/ValidationErrors.xlf  | 12 ++++++------
- .../Private/Translations/ru/ValidationErrors.xlf     | 10 +++++-----
- .../Private/Translations/sr/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/sv/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/tl_PH/ValidationErrors.xlf  | 12 ++++++------
- .../Private/Translations/tr/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/uk/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/vi/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/zh/ValidationErrors.xlf     | 12 ++++++------
- .../Private/Translations/zh_TW/ValidationErrors.xlf  | 12 ++++++------
- 28 files changed, 167 insertions(+), 167 deletions(-)
-
 diff --git a/Neos.Flow/Resources/Private/Translations/ar/ValidationErrors.xlf b/Neos.Flow/Resources/Private/Translations/ar/ValidationErrors.xlf
 index 69a3425b29..b67267a38f 100644
 --- a/Neos.Flow/Resources/Private/Translations/ar/ValidationErrors.xlf
