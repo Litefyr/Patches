@@ -1,7 +1,7 @@
 From 24fe7ca93398716393f9b0de39d7cc5952d3ab76 Mon Sep 17 00:00:00 2001
 From: Jon Uhlmann <account@uhlmann.pro>
 Date: Mon, 1 Jul 2024 17:59:06 +0200
-Subject: BUGFIX: DateTime validation
+Subject: [PATCH] BUGFIX: DateTime validation
 
 ---
  .../Resources/Private/Translations/en/ValidationErrors.xlf     | 6 +++---
