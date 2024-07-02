@@ -5,9 +5,6 @@
         },
         "neos/content-repository-search": {
             "Enable flat mode fulltext": "https://raw.githubusercontent.com/Litefyr/Patches/main/Search-FulltextPlain.patch"
-        },
-        "neos/flow": {
-            "Fix DateTime translation for validator": "https://raw.githubusercontent.com/Litefyr/Patches/main/flow-issue-3323.patch"
         }
     }
 }
