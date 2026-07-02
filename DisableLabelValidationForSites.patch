@@ -1,0 +1,10 @@
+--- Classes/Domain/Model/Site.old	2026-07-02 13:45:37
++++ Classes/Domain/Model/Site.php	2026-07-02 13:45:23
+@@ -35,7 +35,6 @@
+      * Name of the site
+      *
+      * @var string
+-     * @Flow\Validate(type="Label")
+      * @Flow\Validate(type="NotEmpty")
+      * @Flow\Validate(type="StringLength", options={ "minimum"=1, "maximum"=250 })
+      */

@@ -1,3 +1,7 @@
 {
-    "patches": {}
+    "patches": {
+        "neos/neos": {
+            "Disable label validation for sites": "https://raw.githubusercontent.com/Litefyr/Patches/main/DisableLabelValidationForSites.patch"
+        }
+    }
 }
