@@ -7,8 +7,13 @@ your Distribution or you can also include it directly. In order to do this, make
 
 ```json
 {
-    "extra": {
-        "patches-file": "https://raw.githubusercontent.com/Litefyr/Patches/main/patches.json"
+    "script": {
+        "patches:sync": "curl -fsSL https://raw.githubusercontent.com/Litefyr/Patches/main/patches.json -o patches.json",
+        "patches:refresh": [
+            "@patches:sync",
+            "@composer --no-scripts patches-relock",
+            "@composer --no-scripts patches-repatch"
+        ]
     }
 }
 ```
@@ -25,6 +30,8 @@ correctly
     }
 }
 ```
+
+To update the patches simply run `composer patches:refresh`
 
 [Litefyr]: https://litefyr.io
 [neos]: https://neos.io
