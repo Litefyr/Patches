@@ -1,0 +1,22 @@
+--- a/Classes/Security/Authentication/EntryPoint/LoginNodeRedirect.php
++++ b/Classes/Security/Authentication/EntryPoint/LoginNodeRedirect.php
+@@ -22,6 +22,7 @@
+ use Networkteam\Neos\FrontendLogin\Service\NodeAccessService;
+ use Psr\Http\Message\ResponseInterface;
+ use Psr\Http\Message\ServerRequestInterface;
++use Litefyr\Integration\Exceptions\HttpException;
+
+ /**
+  * Find document node containing login form and redirect there.
+@@ -86,8 +87,11 @@
+                             )))
+                             ->withStatus(303)
+                             ->withHeader('Location', $uri);
++                    } else {
++                        throw new HttpException(403);
+                     }
+                 } catch (\Exception $e) {
++                    throw new HttpException(403);
+                 }
+             }
+         }

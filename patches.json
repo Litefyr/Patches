@@ -6,6 +6,13 @@
                 "url": "https://raw.githubusercontent.com/Litefyr/Patches/main/DisableLabelValidationForSites.patch",
                 "depth": 0
             }
+        ],
+        "networkteam/neos-frontendlogin": [
+            {
+                "description": "Throw 403 exception on unauthorized access",
+                "url": "https://raw.githubusercontent.com/Litefyr/Patches/main/Throw403ExepctionOnUnauthorizedAccess.patch",
+                "depth": 0
+            }
         ]
     }
 }
